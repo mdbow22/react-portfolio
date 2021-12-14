@@ -4,7 +4,7 @@
 
 @layer components {
   .menu-list-item {
-    @apply border-b border-gray-500 sm:border-0 p-3 px-6 card-link;
+    @apply border-b border-gray-500 sm:border-0 p-3 px-6;
   }
 }
 
