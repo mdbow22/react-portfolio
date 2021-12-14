@@ -2,12 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .menu-list-item {
+    @apply border-b border-gray-500 sm:border-0 p-3 px-6 card-link;
+  }
+}
+
+#nav-toggle {
+  position: relative;
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  border: 1px solid black;
+  padding: 5px;
+  border: none;
+  outline: none;
+  background: transparent;
+  
+}
+
+#nav-toggle span {
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  @apply bg-blue-50;
+  border-radius: 5px;
+  left: 0;
+  transition: all 500ms ease;
+}
+
+#nav-toggle span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-toggle span:nth-child(2) {
+  top: 10px;
+}
+
+#nav-toggle span:nth-child(3) {
+  top: 20px;
+}
+
 .section-decoration {
   clip-path: polygon(0% 0%, 100% 0%, calc(100% - 40px) 100%, 0% 100%);
 }
 
 #about .card-link::before {
-  @apply bg-blue-50;
+  @apply bg-cyan-50;
   width: 0%;
   height: 100%;
   transition: width 150ms ease-in-out;
