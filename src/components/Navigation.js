@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-function Navigation() {
+function Navigation({ updatePage }) {
 
     const [menu, setMenu] = useState(false);
 
@@ -9,7 +9,7 @@ function Navigation() {
     }
 
     return (
-        <nav className="relative flex flex-col sm:flex-row sm:justify-between mt-4 bg-gray-700 text-xl">
+        <nav className="relative z-50 flex flex-col sm:flex-row sm:justify-between mt-4 bg-gray-700 text-xl">
                 <div className="sm:hidden px-6 font-semibold py-3 flex justify-between">
                     
                     <button id="nav-toggle" onClick={menuToggle}>
@@ -20,8 +20,8 @@ function Navigation() {
                 </div>
                 <div id="menu-list" className={menu ? "sm:block bg-gray-700 absolute top-16 w-full sm:relative sm:w-auto sm:top-0" : "hidden sm:block bg-gray-700 absolute top-16 w-full sm:relative sm:w-auto sm:top-0"}>
                     <ul id="menu-items" className="w-full sm:w-auto h-full flex sm:relative sm:top-0 flex-col sm:flex-row items-stretch justify-center font-semibold">
-                        <li className="menu-list-item card-link"><a class="inline-block h-full w-full" href="#home">Home</a></li>
-                        <li className="menu-list-item card-link"><a class="inline-block h-full w-full" href="#about">About</a></li>
+                        <li className="menu-list-item card-link"><a class="inline-block h-full w-full" href="#home" onClick={() => updatePage('landing')}>Home</a></li>
+                        <li className="menu-list-item card-link"><a class="inline-block h-full w-full" href="#about" onClick={() => updatePage('about')}>About</a></li>
                         <li className="menu-list-item card-link"><a class="inline-block h-full w-full"  href="#projects">Projects</a></li>
                         <li className="menu-list-item card-link"><a class="inline-block h-full w-full"  href="#connect">Connect</a></li>
                     </ul>
