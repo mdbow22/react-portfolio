@@ -25,10 +25,9 @@
   position: absolute;
   height: 3px;
   width: 100%;
-  @apply bg-blue-50;
+  @apply bg-cyan-50;
   border-radius: 5px;
   left: 0;
-  transition: all 500ms ease;
 }
 
 #nav-toggle span:nth-child(1) {
