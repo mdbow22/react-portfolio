@@ -9,7 +9,7 @@ function Navigation({ updatePage }) {
     }
 
     return (
-        <nav className="relative z-50 flex flex-col sm:flex-row sm:justify-between mt-4 bg-gray-700 text-xl">
+        <nav className="uppercase relative z-50 flex flex-col sm:flex-row sm:justify-between mt-4 bg-gray-700 text-xl">
                 <div className="sm:hidden px-6 font-semibold py-3 flex justify-between">
                     
                     <button id="nav-toggle" onClick={menuToggle}>
@@ -23,7 +23,7 @@ function Navigation({ updatePage }) {
                         <li className="menu-list-item card-link"><a class="inline-block h-full w-full" href="#home" onClick={() => updatePage('landing')}>Home</a></li>
                         <li className="menu-list-item card-link"><a class="inline-block h-full w-full" href="#about" onClick={() => updatePage('about')}>About</a></li>
                         <li className="menu-list-item card-link"><a class="inline-block h-full w-full"  href="#projects">Projects</a></li>
-                        <li className="menu-list-item card-link"><a class="inline-block h-full w-full"  href="#connect">Connect</a></li>
+                        <li className="menu-list-item card-link"><a class="inline-block h-full w-full"  href="#connect" onClick={() => updatePage('connect')}>Connect</a></li>
                     </ul>
                 </div>
                 
