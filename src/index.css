@@ -61,6 +61,21 @@
   @apply text-gray-700;
 }
 
+#connect .card-link::before {
+  @apply bg-cyan-50;
+  width: 0%;
+  height: 100%;
+  transition: width 150ms ease-in-out;
+}
+
+#connect .card-link:hover::before {
+  width: 100%;
+}
+
+#connect .card-link:hover {
+  @apply text-gray-700;
+}
+
 .card-link {
   position: relative;
   background-color: transparent;
