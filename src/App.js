@@ -5,6 +5,7 @@ import Landing from './components/Landing';
 import About from './components/About';
 import Projects from './components/Projects';
 import Connect from './components/Connect';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
       <main>
         {pageToRender()}
       </main>
+      <Footer />
     </div>
   );
 }

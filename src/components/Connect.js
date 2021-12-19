@@ -7,8 +7,6 @@ function Connect() {
     const [missing, setMissing] = useState(true);
     const [goodEmail, setGoodEmail] = useState(true);
 
-    
-
     const updateEmail = (ev) => {
         setEmail(ev.target.value);
         if(!email.split('').includes('@') || !email.split('').includes('.')) {
@@ -33,8 +31,6 @@ function Connect() {
         } else {
             setMissing(true);
         }
-
-       
     }
 
     useEffect(() => {
@@ -65,7 +61,7 @@ function Connect() {
                     <div className="flex flex-col mt-6 gap-3 text-2xl">
                         <label for="message">Your Message</label>
                         <textarea className="p-2 text-gray-700" name="message" id="message" placeholder="What do you want to say?" value={message} onBlur={updateMissing} onChange={updateMess}></textarea>
-                        <p className={(missing) ? 'hidden' : 'block text-lg text-red-500'}>You must enter a message and email.</p>
+                        <p className={(missing) ? 'hidden' : 'block text-lg text-red-500'}>Message cannot be blank</p>
                     </div>
                     <button className="mt-6 border-2 p-2 card-link text-2xl" type="submit">Send</button>
                 </form>
