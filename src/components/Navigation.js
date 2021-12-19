@@ -20,10 +20,10 @@ function Navigation({ updatePage }) {
                 </div>
                 <div id="menu-list" className={menu ? "sm:block bg-gray-700 absolute top-16 w-full sm:relative sm:w-auto sm:top-0" : "hidden sm:block bg-gray-700 absolute top-16 w-full sm:relative sm:w-auto sm:top-0"}>
                     <ul id="menu-items" className="w-full sm:w-auto h-full flex sm:relative sm:top-0 flex-col sm:flex-row items-stretch justify-center font-semibold">
-                        <li className="menu-list-item card-link"><a class="inline-block h-full w-full" href="#home" onClick={() => updatePage('landing')}>Home</a></li>
-                        <li className="menu-list-item card-link"><a class="inline-block h-full w-full" href="#about" onClick={() => updatePage('about')}>About</a></li>
-                        <li className="menu-list-item card-link"><a class="inline-block h-full w-full"  href="#projects">Projects</a></li>
-                        <li className="menu-list-item card-link"><a class="inline-block h-full w-full"  href="#connect" onClick={() => updatePage('connect')}>Connect</a></li>
+                        <li className="menu-list-item card-link"><a className="inline-block h-full w-full" href="#home" onClick={() => updatePage('landing')}>Home</a></li>
+                        <li className="menu-list-item card-link"><a className="inline-block h-full w-full" href="#about" onClick={() => updatePage('about')}>About</a></li>
+                        <li className="menu-list-item card-link"><a className="inline-block h-full w-full"  href="#projects" onClick={() => updatePage('projects')}>Projects</a></li>
+                        <li className="menu-list-item card-link"><a className="inline-block h-full w-full"  href="#connect" onClick={() => updatePage('connect')}>Connect</a></li>
                     </ul>
                 </div>
                 
