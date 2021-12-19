@@ -76,6 +76,25 @@
   @apply text-gray-700;
 }
 
+#resume .card-link::before {
+  @apply bg-gray-900;
+  width: 0%;
+  height: 100%;
+  transition: width 150ms ease-in-out;
+}
+
+#resume .card-link:hover::before {
+  width: 100%;
+}
+
+#resume .card-link {
+  @apply bg-cyan-200 text-gray-900;
+}
+
+#resume .card-link:hover {
+  @apply text-cyan-50 border-cyan-50;
+}
+
 .card-link {
   position: relative;
   background-color: transparent;

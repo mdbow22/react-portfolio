@@ -5,6 +5,7 @@ import Landing from './components/Landing';
 import About from './components/About';
 import Projects from './components/Projects';
 import Connect from './components/Connect';
+import Resume from './components/Resume';
 import Footer from './components/Footer';
 
 function App() {
@@ -25,6 +26,8 @@ function App() {
         return <Projects />;
       case 'connect':
         return <Connect />;
+      case 'resume':
+        return <Resume />;
     }
   }
 

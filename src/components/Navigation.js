@@ -10,7 +10,7 @@ function Navigation({ updatePage }) {
 
     const linkClick = (page) => {
         updatePage(page);
-        menuToggle();
+        setMenu(false);
     }
 
     return (
@@ -29,6 +29,7 @@ function Navigation({ updatePage }) {
                         <li className="menu-list-item card-link"><a className="inline-block h-full w-full" href="#about" onClick={() => linkClick('about')}>About</a></li>
                         <li className="menu-list-item card-link"><a className="inline-block h-full w-full"  href="#projects" onClick={() => linkClick('projects')}>Projects</a></li>
                         <li className="menu-list-item card-link"><a className="inline-block h-full w-full"  href="#connect" onClick={() => linkClick('connect')}>Connect</a></li>
+                        <li className="menu-list-item card-link"><a className="inline-block h-full w-full"  href="#resume" onClick={() => linkClick('resume')}>Resume</a></li>
                     </ul>
                 </div>
                 
