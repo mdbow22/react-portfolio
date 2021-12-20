@@ -15,7 +15,7 @@ function Projects() {
             skills: ['HTML5','Materialize','NPS API','Vanilla JS'],
             demo: 'https://mdbow22.github.io/Project-One/',
             repo: 'https://mdbow22.github.io/NPS-Activity-Planner/',
-            image: './assets/npsExplorerSrnshot-32.png'
+            image: './assets/npsExplorerSrnShot-32.png'
         },
         {
             name: 'Tech Blog',
